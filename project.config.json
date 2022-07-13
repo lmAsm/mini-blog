@@ -3,36 +3,54 @@
     "cloudfunctionRoot": "cloudfunctions/",
     "setting": {
         "urlCheck": true,
-        "scopeDataCheck": false,
-        "coverView": true,
         "es6": false,
+        "enhance": true,
         "postcss": true,
-        "compileHotReLoad": false,
-        "lazyloadPlaceholderEnable": false,
         "preloadBackgroundData": false,
         "minified": true,
-        "autoAudits": false,
         "newFeature": false,
-        "uglifyFileName": false,
-        "uploadWithSourceMap": true,
-        "useIsolateContext": false,
+        "coverView": true,
         "nodeModules": false,
-        "enhance": true,
+        "autoAudits": false,
+        "showShadowRootInWxmlPanel": true,
+        "scopeDataCheck": false,
+        "uglifyFileName": false,
+        "checkInvalidKey": true,
+        "checkSiteMap": true,
+        "uploadWithSourceMap": true,
+        "compileHotReLoad": true,
+        "lazyloadPlaceholderEnable": false,
         "useMultiFrameRuntime": true,
         "useApiHook": true,
         "useApiHostProcess": true,
-        "showShadowRootInWxmlPanel": true,
+        "babelSetting": {
+            "ignore": [],
+            "disablePlugins": [],
+            "outputPath": ""
+        },
+        "useIsolateContext": false,
+        "userConfirmedBundleSwitch": false,
         "packNpmManually": false,
         "packNpmRelationList": [],
         "minifyWXSS": true,
         "disableUseStrict": false,
-        "ignoreUploadUnusedFiles": true,
-        "minifyWXML": true
+        "minifyWXML": true,
+        "showES6CompileOption": false,
+        "useCompilerPlugins": false,
+        "ignoreUploadUnusedFiles": true
     },
     "appid": "wxad2808da3d85387f",
     "projectname": "mini-blog",
     "libVersion": "2.14.1",
     "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+    "packOptions": {
+        "ignore": [
+            {
+                "type": "regexp",
+                "value": "\\.scss$"
+            }
+        ]
+    },
     "condition": {
         "search": {
             "list": []
