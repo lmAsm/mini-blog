@@ -1,3 +1,22 @@
-.container {
-  background-color:  red;
+.home-container {
+  .home-header {
+    display: flex;
+    padding: 0 24rpx;
+    align-content: center;
+    .weather {
+      font-size: 14px;
+      color: #565454;
+    }
+    .search {
+      margin: 0 20rpx;
+      flex: 1;
+      .t-input {
+        border-radius: 30rpx;
+        padding: 2rpx 10rpx;
+        input {
+          font-size: 12px;
+        }
+      }
+    }
+  }
 }

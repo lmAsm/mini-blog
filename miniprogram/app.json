@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/sort/sort",
-    "pages/my/my"
+    "pages/my/my",
+    "pages/search/search"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -35,6 +36,5 @@
       }
     ]
   },
-  "sitemapLocation": "sitemap.json",
-  "style": "v2"
+  "sitemapLocation": "sitemap.json"
 }

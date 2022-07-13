@@ -1,3 +1,20 @@
-.container {
-  background-color: red;
+.home-container .home-header {
+  display: flex;
+  padding: 0 24rpx;
+  align-content: center;
+}
+.home-container .home-header .weather {
+  font-size: 14px;
+  color: #565454;
+}
+.home-container .home-header .search {
+  margin: 0 20rpx;
+  flex: 1;
+}
+.home-container .home-header .search .t-input {
+  border-radius: 30rpx;
+  padding: 2rpx 10rpx;
+}
+.home-container .home-header .search .t-input input {
+  font-size: 12px;
 }
