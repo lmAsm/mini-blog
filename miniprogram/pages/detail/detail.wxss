@@ -1,0 +1,36 @@
+.detail-container {
+  border-top: 1rpx solid #f5f5f5;
+}
+.detail-container .article-title {
+  padding-top: 20rpx;
+  padding-left: 24rpx;
+  background: #fff;
+  text-align: center;
+}
+.detail-container .header {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding-top: 20rpx;
+  padding-left: 32rpx;
+}
+.detail-container .header .avatar {
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 40rpx;
+}
+.detail-container .header .title {
+  color: #0a74c7;
+  font-size: 12px;
+  margin: 0 20rpx 0 15rpx;
+}
+.detail-container .header .update {
+  color: #666;
+  font-size: 12px;
+}
+.detail-container .header .update .time {
+  margin-left: 8rpx;
+}
+.detail-container .content {
+  margin-top: -20rpx;
+}

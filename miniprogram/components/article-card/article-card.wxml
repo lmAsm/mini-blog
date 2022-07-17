@@ -1,0 +1,29 @@
+<wxs src="../../utils/format.wxs" module="tools"></wxs>
+
+<view class="card-box">
+    <image class="cover" src="{{item.cover || cover}}"></image>
+    <view class="content">
+        <view class="title">{{item.title}}</view>
+        <view class="desc">{{item.description}}</view>
+        <view class="bottom">
+            <view class="item">
+                <t-icon name="time" size="10px" color="#666" customStyle="marginRight: 10rpx" />
+                <text style="margin-left: 6rpx">{{tools.my_slice(item.first_published_at, 0, 10)}}</text>
+            </view>
+            <view class="right">
+                <view class="item">
+                    <t-icon name="user" size="10px" color="#666" customStyle="marginRight: 10rpx" />
+                    <text style="margin-left: 6rpx">{{item.last_editor.name}}</text>
+                </view>
+                <view class="item">
+                    <image class="views" src="../../images/eyes.png" />
+                    <text style="margin-left: 6rpx">{{item.hits}}</text>
+                </view>
+                <view class="item">
+                    <t-icon name="thumb-up" size="10px" color="#666" customStyle="marginRight: 10rpx" />
+                    <text style="margin-left: 6rpx">{{item.likes_count}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

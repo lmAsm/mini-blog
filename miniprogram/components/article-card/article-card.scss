@@ -1,0 +1,52 @@
+.card-box {
+  background: #fff;
+  padding: 20rpx;
+  margin: 0 20rpx 20rpx 20rpx;
+  border: 1rpx solid #f5f0f0;
+  border-radius: 10rpx;
+  display: flex;
+  align-items: center;
+  .cover {
+    width: 240rpx;
+    height: 160rpx;
+    flex-shrink: 0;
+    border: 1rpx solid rgba(0,0,0,0.1);
+    border-radius: 20rpx;
+  }
+  .content {
+    width: calc(100% - 270rpx);
+    margin-left: 20rpx;
+    font-size: 14px;
+    .title {
+      margin-bottom: 10rpx;
+    }
+    .desc {
+      text-indent: 20rpx;
+      color: #666;
+      font-size: 10px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+    }
+    .bottom {
+      color: #666;
+      margin-top: 18rpx;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 10px;
+      .item, .right {
+        display: flex;
+        align-items: center;
+        .item {
+          margin-left: 14rpx;
+        }
+        .views {
+          width: 12px;
+          height: 12px;
+        }
+      }
+    }
+  }
+}

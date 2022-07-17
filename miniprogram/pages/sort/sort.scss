@@ -1,0 +1,41 @@
+.sort-container {
+  .sort-card {
+    border: 1rpx solid #f5f0f0;
+    background: #fff;
+    margin: 20rpx 20rpx;
+    display: flex;
+    padding: 20rpx;
+    border-radius: 20rpx;
+    align-items: center;
+    justify-content: space-between;
+    .left-wrap {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      .card-image {
+        width: 83rpx;
+        height: 74rpx;
+        flex-shrink: 0;
+      }
+      .card-title {
+        margin-left: 40rpx;
+        .desc {
+          margin-top: 10rpx;
+          font-size: 12px;
+          color: #666;
+          width: 420rpx;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 1;
+          line-clamp: 1;
+          overflow: hidden;
+        }
+      }
+    }
+    .right-wrap {
+      flex-shrink: 0;
+      font-size: 12px;
+      color: #666;
+    }
+  }
+}

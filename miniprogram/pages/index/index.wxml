@@ -6,4 +6,21 @@
         </view>
         <t-icon name="notification" size="20px" color="#f18181" />
     </view>
+    <view class="home-content">
+        <block wx:if="{{loading}}">
+            <view wx:for="{{3}}" wx:key="*this">
+                <t-skeleton
+                    rowCol="{{rowCol}}"
+                    theme="text"
+                    animation="gradient"
+                    loading
+                />
+            </view>
+        </block>
+        <block wx:else>
+            <block wx:for="{{articleList}}" wx:key="id">
+                <article-card data-item="{{item}}" item="{{item}}" bindtap="goDetailPage"/>
+            </block>
+        </block>
+    </view>
 </view>

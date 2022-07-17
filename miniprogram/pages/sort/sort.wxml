@@ -1,2 +1,17 @@
-<!--pages/sort/sort.wxml-->
-<text>pages/sort/sort.wxml</text>
+<view class="sort-container">
+    <block wx:for="{{sortList}}" wx:for-item="item" wx:key="id">
+        <view class="sort-card" bindtap="goSortDetail" data-item="{{item}}">
+            <view class="left-wrap">
+                <image class="card-image" src="{{item.picture}}"></image>
+                <view class="card-title">
+                    <view>{{item.name}}</view>
+                    <view class="desc">{{item.description}}</view>
+                </view>
+            </view>
+            <view class="right-wrap">
+                <text>数量：</text>
+                <text>{{item.items_count}}</text>
+            </view>
+        </view>
+    </block>
+</view>

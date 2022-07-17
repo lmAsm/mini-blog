@@ -1,7 +1,14 @@
 .home-container {
   .home-header {
+    background: #fff;
+    width: calc(100% - 40rpx);
+    margin: 0 20rpx;
+    border-radius: 10rpx;
+    position: fixed;
+    box-sizing: border-box;
     display: flex;
-    padding: 0 24rpx;
+    padding: 20rpx 20rpx 20rpx 20rpx;
+    border-bottom: 1rpx solid #eae3e3;
     align-content: center;
     .weather {
       font-size: 14px;
@@ -13,10 +20,20 @@
       .t-input {
         border-radius: 30rpx;
         padding: 2rpx 10rpx;
+        border: 1rpx solid #ecebec;
         input {
           font-size: 12px;
         }
       }
+    }
+  }
+  .home-content {
+    margin-top: 110rpx;
+    width: 100%;
+    .t-skeleton {
+      border: 1rpx solid #eae3e3;
+      padding: 20rpx;
+      border-radius: 20rpx;
     }
   }
 }

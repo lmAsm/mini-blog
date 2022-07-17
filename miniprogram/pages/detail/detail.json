@@ -1,0 +1,7 @@
+{
+  "navigationBarBackgroundColor": "#fff",
+  "usingComponents": {
+    "t-skeleton": "tdesign-miniprogram/skeleton/skeleton",
+    "towxml":"/towxml/towxml"
+  }
+}

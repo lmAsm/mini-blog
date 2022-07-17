@@ -1,0 +1,27 @@
+<wxs src="../../utils/format.wxs" module="tools"></wxs>
+
+<view class="detail-container">
+    <block wx:if="{{loading}}">
+        <view wx:for="{{3}}" wx:key="*this">
+            <t-skeleton
+                rowCol="{{rowCol}}"
+                theme="text"
+                animation="gradient"
+                loading
+            />
+        </view>
+    </block>
+    <block wx:else>
+        <view class="article-title">{{articleData.title}}</view>
+        <view class="header">
+            <image class="avatar" src="{{articleData.creator.avatar_url}}"></image>
+            <text class="title">{{articleData.creator.name}}</text>
+            <text class="update">更新于<text class="time">{{tools.timeTrans(articleData.creator.updated_at)}}</text>
+            </text>
+        </view>
+        <view class="content">
+            <!--使用towxml-->
+            <towxml nodes="{{article}}"/>
+        </view>
+    </block>
+</view>

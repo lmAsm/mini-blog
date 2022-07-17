@@ -1,2 +1,28 @@
-<!--pages/my/my.wxml-->
-<text>pages/my/my.wxml</text>
+<view class="my-container">
+    <view class="login-header">
+        <image class="bg" src="../../images/space.jpg"></image>
+        <block>
+            <view class="avatar" bindtap="handleClickLogin">
+                <image class="image" src="{{userInfo.avatarUrl || '../../images/avatar.jpg'}}"></image>
+                <view class="text">{{userInfo.nickName || '点击登录'}}</view>
+            </view>
+        </block>
+    </view>
+    <view>
+        <t-cell title="单行标题" hover arrow />
+        <t-cell title="单行标题123" hover arrow />
+        <t-cell title="单行标题455" hover arrow />
+    </view>
+
+    <t-dialog
+        visible="{{visible}}"
+        title="您还未登录"
+        content="请点击下方登录按钮完成授权"
+        confirm-btn="立即登录"
+        cancel-btn="暂不登录"
+        button-layout="vertical"
+        bind:confirm="confirmHandle"
+        bind:cancel="cancelHandle"
+    ></t-dialog>
+    <t-toast id="t-toast" />
+</view>

@@ -2,6 +2,8 @@
   "usingComponents": {
     "t-button": "tdesign-miniprogram/button/button",
     "t-input": "tdesign-miniprogram/input/input",
-    "t-icon": "tdesign-miniprogram/icon/icon"
+    "t-icon": "tdesign-miniprogram/icon/icon",
+    "t-skeleton": "tdesign-miniprogram/skeleton/skeleton",
+    "article-card": "/components/article-card/article-card"
   }
 }

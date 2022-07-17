@@ -1,0 +1,26 @@
+function my_slice(str, a, b) {
+    if (!str) {
+        return ''
+    }
+    return str.slice(a, b)
+}
+
+function timeTrans(time, type){
+    var date = getDate((getDate(time).getTime() + 8 * 3600 * 1000))
+    date = date.toJSON();
+    if (!date) {
+        return ''
+    }
+    if (type===1){
+        date = date.slice(0, 10)
+    }
+    else {
+        date = date.slice(0, 19).replace('T', ' ')
+    }
+    return date
+}
+
+module.exports = {
+    my_slice: my_slice,
+    timeTrans: timeTrans
+}

@@ -1,1 +1,25 @@
-/* pages/my/my.wxss */
+.my-container .login-header {
+  height: 400rpx;
+}
+.my-container .login-header .bg {
+  position: absolute;
+  width: 100%;
+  height: 400rpx;
+}
+.my-container .login-header .avatar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  top: 120rpx;
+  left: 40rpx;
+}
+.my-container .login-header .avatar .image {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 120rpx;
+  margin-right: 20rpx;
+}
+.my-container .login-header .avatar .text {
+  font-size: 14px;
+  color: #bfbbbb;
+}

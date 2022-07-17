@@ -14,9 +14,17 @@ App({
       });
     }
 
+
+
+    const data = wx.getStorageSync('user')
     this.globalData = {
-      userInfo: {},
+      userInfo: data || {},
+      haveAuth: false,
       baseUrl: "https://yuque.com"
     };
-  }
+    console.log('onLaunch==== ', data)
+  },
+
+  // 引入`towxml3.0`解析方法
+  towxml: require('/towxml/index'),
 });
