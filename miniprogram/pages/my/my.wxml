@@ -1,9 +1,9 @@
 <view class="my-container">
     <view class="login-header">
-        <image class="bg" src="../../images/space.jpg"></image>
+        <image class="bg" src="https://636c-cloud1-4g78m65u205d73e5-1311076676.tcb.qcloud.la/space.jpg?sign=8d39f7b5cc46048dd57ad30045305bd2&t=1658245633"></image>
         <block>
             <view class="avatar" bindtap="handleClickLogin">
-                <image class="image" src="{{userInfo.avatarUrl || '../../images/avatar.jpg'}}"></image>
+                <image class="image" src="{{userInfo.avatarUrl || 'https://636c-cloud1-4g78m65u205d73e5-1311076676.tcb.qcloud.la/avatar.jpg?sign=d42aec1360ee1e52b87fd1b6f435e66b&t=1658245703'}}"></image>
                 <view class="text">{{userInfo.nickName || '点击登录'}}</view>
             </view>
         </block>
