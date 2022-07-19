@@ -1,5 +1,5 @@
 import api from '../../api/require'
-import {articleDetail} from "../../api/api";
+import { baseUrl } from '../../api/api'
 
 Page({
 
@@ -35,7 +35,7 @@ Page({
         this.setData({
             loading: true
         })
-        api.get(`/api/v2/repos/${id}/docs`, {
+        api.get(`${baseUrl}/api/v2/repos/${id}/docs`, {
             optional_properties: 'hits'
         }).then(res => {
             console.log('getArticleList res==== ', res)

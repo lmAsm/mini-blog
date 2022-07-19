@@ -15,6 +15,7 @@ const sortList = `${baseUrl}/api/v2/users/anfou-xhouv/repos/` // 获取专题列
 
 
 module.exports = {
+    baseUrl,
     getArticleList,
     articleDetail,
     sortList,

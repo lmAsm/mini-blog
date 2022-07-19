@@ -1,4 +1,4 @@
-import { articleDetail, getArticleList } from '../../api/api'
+import { articleDetail, getArticleList, baseUrl } from '../../api/api'
 import api from '../../api/require'
 const app = getApp()
 
@@ -46,7 +46,7 @@ Page({
         })
         const that = this
         console.log('getArticleDetail==== ', id, slug)
-        api.get(`/api/v2/repos/${namespace}/docs/${id}`, {
+        api.get(`${baseUrl}/api/v2/repos/${namespace}/docs/${id}`, {
             optional_properties: 'hits'
         }).then(res => {
             console.log('getArticleDetail res==== ', res)
