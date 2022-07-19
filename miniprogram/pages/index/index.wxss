@@ -8,11 +8,14 @@
   display: flex;
   padding: 20rpx 20rpx 20rpx 20rpx;
   border-bottom: 1rpx solid #eae3e3;
-  align-content: center;
+  align-items: center;
 }
 .home-container .home-header .weather {
-  font-size: 14px;
+  font-size: 12px;
   color: #565454;
+}
+.home-container .home-header .weather .temperature {
+  font-size: 10px;
 }
 .home-container .home-header .search {
   margin: 0 20rpx;

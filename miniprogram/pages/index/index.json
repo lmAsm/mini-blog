@@ -4,6 +4,7 @@
     "t-input": "tdesign-miniprogram/input/input",
     "t-icon": "tdesign-miniprogram/icon/icon",
     "t-skeleton": "tdesign-miniprogram/skeleton/skeleton",
-    "article-card": "/components/article-card/article-card"
+    "article-card": "/components/article-card/article-card",
+    "t-toast": "tdesign-miniprogram/toast/toast"
   }
 }

@@ -9,10 +9,13 @@
     display: flex;
     padding: 20rpx 20rpx 20rpx 20rpx;
     border-bottom: 1rpx solid #eae3e3;
-    align-content: center;
+    align-items: center;
     .weather {
-      font-size: 14px;
+      font-size: 12px;
       color: #565454;
+      .temperature {
+        font-size: 10px;
+      }
     }
     .search {
       margin: 0 20rpx;

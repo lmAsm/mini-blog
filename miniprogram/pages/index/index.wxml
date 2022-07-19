@@ -1,6 +1,10 @@
 <view class="home-container">
     <view class="home-header">
-        <view class="weather">获取天气</view>
+        <view wx:if="{{!locationAuth}}" class="weather" bindtap="handleClickWeather">获取天气</view>
+        <view wx:else class="weather">
+            <view>{{weather.city}}</view>
+            <view class="temperature">{{weather.weather}} {{weather.temperature}}℃</view>
+        </view>
         <view class="search" bindtap="goSearchPage">
             <t-input prefix-icon="search" disabled="{{true}}" placeholder="搜索" />
         </view>
@@ -23,4 +27,5 @@
             </block>
         </block>
     </view>
+    <t-toast id="t-toast" />
 </view>

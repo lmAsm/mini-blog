@@ -7,6 +7,14 @@
         "pages/detail/detail",
         "pages/sortDetail/sortDetail"
     ],
+    "permission": {
+        "scope.userLocation": {
+            "desc": "位置信息仅用于小程序获取天气用途~"
+        }
+    },
+    "requiredPrivateInfos": [
+        "getLocation"
+    ],
     "window": {
         "backgroundColor": "#F6F6F6",
         "backgroundTextStyle": "light",
