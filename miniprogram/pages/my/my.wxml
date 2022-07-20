@@ -25,14 +25,14 @@
         <t-cell title="关于作者" hover arrow>
             <t-icon name="user-circle" slot="left-icon" color="#ABC9FF" size="20px" />
         </t-cell>
-        <view wx:if="{{userInfo.nickName}}" class="logout" bindtap="logout">
-            <t-cell title="退出登录" hover align="middle" />
-        </view>
         <button class="button-share" open-type="contact">
             <t-cell title="联系我们" hover arrow open-type="share">
                 <t-icon name="mail" slot="left-icon" color="#54BAB9" size="20px" />
             </t-cell>
         </button>
+        <view wx:if="{{userInfo.nickName}}" class="logout" bindtap="logout">
+            <t-cell title="退出登录" hover align="middle" />
+        </view>
     </view>
 
     <t-dialog
