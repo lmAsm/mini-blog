@@ -16,14 +16,15 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-        this.setData({
+        console.log('app.globalData=== ', app.globalData)
+        app.globalData.userInfo !== '{}' && this.setData({
             userInfo: JSON.parse(app.globalData.userInfo)
         })
     },
 
     // 点击登录
     handleClickLogin() {
-        if (userInfo.nickName) {
+        if (this.data.userInfo.nickName) {
             return
         }
         this.setData({
@@ -31,14 +32,21 @@ Page({
         })
     },
 
+    // 退出登录
+    logout() {
+        app.globalData.userInfo = '{}'
+        wx.removeStorageSync('user')
+        this.setData({
+            userInfo: {}
+        })
+    },
+
     confirmHandle() {
-        console.log('confirmHandle====')
         const that = this
         wx.getUserProfile({
             desc: '用于完善会员资料', // 声明获取用户个人信息后的用途
             lang: 'zh_CN',
             success(data) {
-                console.log('success==== ', data)
                 app.globalData.userInfo = data.userInfo
                 app.globalData.haveAuth = true
                 Toast({
@@ -105,6 +113,10 @@ Page({
      * 用户点击右上角分享
      */
     onShareAppMessage: function () {
-
+        return {
+            title: '快来看这里的文章，总结的很棒~',
+            path: 'pages/index/index', // 好友点击分享之后跳转到的小程序的页面
+            desc: '安否的个人博客',  // 看你需要不需要，不需要不加
+        }
     }
 })

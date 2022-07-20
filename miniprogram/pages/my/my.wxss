@@ -1,5 +1,6 @@
 .my-container .login-header {
   height: 400rpx;
+  margin-bottom: 10px;
 }
 .my-container .login-header .bg {
   position: absolute;
@@ -22,4 +23,20 @@
 .my-container .login-header .avatar .text {
   font-size: 14px;
   color: #bfbbbb;
+}
+.my-container .operate-content {
+  padding: 0 20rpx;
+}
+.my-container .operate-content .collect {
+  margin-bottom: 20rpx;
+}
+.my-container .operate-content .button-share {
+  margin: 0;
+  padding: 0;
+}
+.my-container .operate-content .logout {
+  margin-top: 20rpx;
+}
+.my-container .operate-content .logout .t-cell__title {
+  padding-left: 40%;
 }

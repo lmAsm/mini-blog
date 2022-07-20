@@ -8,10 +8,31 @@
             </view>
         </block>
     </view>
-    <view>
-        <t-cell title="单行标题" hover arrow />
-        <t-cell title="单行标题123" hover arrow />
-        <t-cell title="单行标题455" hover arrow />
+    <view class="operate-content">
+        <view class="collect">
+            <t-cell title="我的收藏" hover arrow>
+                <t-icon name="heart" slot="left-icon" color="#EB4747" size="20px" align="top" />
+            </t-cell>
+        </view>
+        <button class="button-share" open-type="share">
+            <t-cell title="分享好友" hover arrow open-type="share">
+                <t-icon name="share" slot="left-icon" color="#FF8B8B" size="20px" />
+            </t-cell>
+        </button>
+        <t-cell title="意见反馈" hover arrow>
+            <t-icon name="edit-1" slot="left-icon" color="#FFDEDE" size="20px" />
+        </t-cell>
+        <t-cell title="关于作者" hover arrow>
+            <t-icon name="user-circle" slot="left-icon" color="#ABC9FF" size="20px" />
+        </t-cell>
+        <view wx:if="{{userInfo.nickName}}" class="logout" bindtap="logout">
+            <t-cell title="退出登录" hover align="middle" />
+        </view>
+        <button class="button-share" open-type="contact">
+            <t-cell title="联系我们" hover arrow open-type="share">
+                <t-icon name="mail" slot="left-icon" color="#54BAB9" size="20px" />
+            </t-cell>
+        </button>
     </view>
 
     <t-dialog

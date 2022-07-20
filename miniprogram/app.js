@@ -18,7 +18,7 @@ App({
 
     const data = wx.getStorageSync('user')
     this.globalData = {
-      userInfo: data || {},
+      userInfo: data || '{}',
       haveAuth: false,
       baseUrl: "https://yuque.com"
     };
