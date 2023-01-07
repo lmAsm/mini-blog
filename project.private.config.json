@@ -71,6 +71,13 @@
                     "name": "我的",
                     "pathName": "pages/my/my",
                     "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/demo/index",
+                    "query": "",
                     "scene": null,
                     "launchMode": "default"
                 }

@@ -1,0 +1,29 @@
+<view class="demo">
+
+    <view class="purse">
+        <view class="coin {{animationClass}}">
+            <view class="front"></view>
+            <view class="back"></view>
+            <view class="side">
+                <view class="spoke"></view>
+                <view class="spoke"></view>
+                <view class="spoke"></view>
+                <view class="spoke"></view>
+                <view class="spoke"></view>
+                <view class="spoke"></view>
+                <view class="spoke"></view>
+                <view class="spoke"></view>
+                <view class="spoke"></view>
+                <view class="spoke"></view>
+                <view class="spoke"></view>
+                <view class="spoke"></view>
+                <view class="spoke"></view>
+                <view class="spoke"></view>
+                <view class="spoke"></view>
+                <view class="spoke"></view>
+            </view>
+        </view>
+    </view>
+
+    <view style="color: red" bindtap="clickBtn">按钮</view>
+</view>

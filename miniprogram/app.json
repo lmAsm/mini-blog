@@ -5,7 +5,8 @@
         "pages/my/my",
         "pages/search/search",
         "pages/detail/detail",
-        "pages/sortDetail/sortDetail"
+        "pages/sortDetail/sortDetail",
+        "pages/demo/index"
     ],
     "permission": {
         "scope.userLocation": {
