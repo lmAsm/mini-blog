@@ -5,6 +5,7 @@ Page({
     onLoad: function (options) {
 
     },
+    // test
     clickBtn() {
         this.setData({
             animationClass: 'animationClass'
